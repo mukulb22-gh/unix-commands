@@ -1,0 +1,14 @@
+# Unix simple commands to delete multiple files which are mention in a text file.
+
+# ls input.txt
+# the output  file1.txt, file2.txt, and file3.txt
+# To remove files command instead of while loop
+
+# The xargs command takes a list of arguments from standard input 
+# and executes a command on each argument. In this case, the xargs 
+# command is used to execute the rm command on each line in the text file input.txt.
+
+
+cat input.txt | xargs rm -f
+
+
